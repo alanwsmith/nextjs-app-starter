@@ -1,7 +1,10 @@
-# Site Name Goes Here TKTKTKT
+# Next.js App Starter by Alan W. Smith
 
 ## Overview
 
-TODO: Fill this out.
+This is my app starter. It has tailwind
+installed along with a few default styles
+and some basic favicons and an og image.
 
-TKTKTKTK
+It includes a basic components/LayoutMain
+file for a global layout.
