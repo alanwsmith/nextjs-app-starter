@@ -15,3 +15,25 @@
 - An example of the HeadTag call with the OG image and details in in the `site/pages/index.js` file
 - A global layout is defined in `site/components/LayoutMain.js` and called in `site/pages/_app.js`
 - There's a hello world api sample call under `site/pages/api/sample/hello.js`
+
+## Installation
+
+After you clone down the repo, move into the `site` direcotry and run npm install. For example:
+
+```
+cd site
+npm i
+```
+
+That picks up everything from the package.json and package-lock.json files and installs them. 
+
+## Local Dev
+
+If you have the Netlify command line tool, run this inside the `site` directory to preview
+the site for local dev.
+
+```
+netlify dev
+```
+
+

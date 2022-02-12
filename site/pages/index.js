@@ -1,6 +1,12 @@
 import HeadTag from '../components/HeadTag'
+import CodeBlock from '../components/CodeBlock'
 
 export default function HomePage() {
+  const exampleCode = `
+const some_var = 'a value'
+const some_object = { key: 'value' }
+`
+
   return (
     <>
       <HeadTag
@@ -23,6 +29,11 @@ export default function HomePage() {
         <li>
           A `netlify.toml` file and the `@netlify/plugin-nextjs` module are
           installed for deployment on Netlify.
+        </li>
+        <li>
+          Code syntax highlighting via prism is also included. For example
+          <br />
+          <CodeBlock code={exampleCode} language="jsx" />
         </li>
       </ul>
       <p>More details are in the README file</p>
