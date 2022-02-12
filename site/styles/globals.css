@@ -49,6 +49,8 @@
   }
 
   .code_block {
+    @apply mt-6;
+    @apply mb-4;
     @apply rounded-md;
     @apply border;
     @apply border-gray-600;
@@ -70,10 +72,12 @@
 
   .code_line_number_first {
     @apply pt-2;
+    @apply rounded-tl-md;
   }
 
   .code_line_number_last {
     @apply pb-2;
+    @apply rounded-bl-md;
   }
 
   .code_line_content {
