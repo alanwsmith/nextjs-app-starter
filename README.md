@@ -1,5 +1,14 @@
 # Next.js Starter
 
+## Installation
+
+You have to use a sub directory to load the thing. Use:
+
+```bash
+npx create-next-app --example https://github.com/alanwsmith/nextjs-starter.alanwsmith.com/tree/main/site .
+```
+
+
 ## Overview
 
 - This is a basic Next.js starter template
