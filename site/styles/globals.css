@@ -47,6 +47,11 @@
   li {
     @apply pb-3;
   }
+  
+  p {
+    @apply pb-6;
+  }
+   
 
   .code_block {
     @apply mt-6;
