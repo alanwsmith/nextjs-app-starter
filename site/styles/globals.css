@@ -3,10 +3,12 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply bg-gray-900;
+  }
   body {
     @apply bg-gray-900;
     @apply text-gray-300;
-    @apply text-lg;
   }
 
   a {
@@ -47,11 +49,10 @@
   li {
     @apply pb-3;
   }
-  
+
   p {
     @apply pb-6;
   }
-   
 
   .code_block {
     @apply mt-6;
