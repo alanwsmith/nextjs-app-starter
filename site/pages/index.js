@@ -7,15 +7,16 @@ const some_var = 'a value'
 const some_object = { key: 'value' }
 `
 
+  // <HeadTag
+  //   description="Next.js Starter from Alan W. Smith"
+  //   image="https://nextjs-starter.alanwsmith.com/og-images/main.png"
+  //   title="Next.js Starter from Alan W. Smith"
+  //   type="website"
+  //   url="https://nextjs-starter.alanwsmith.com/"
+  // />
+
   return (
     <>
-      <HeadTag
-        description="Next.js Starter from Alan W. Smith"
-        image="https://nextjs-starter.alanwsmith.com/og-images/main.png"
-        title="Next.js Starter from Alan W. Smith"
-        type="website"
-        url="https://nextjs-starter.alanwsmith.com/"
-      />
       <h1>Next.js Starter</h1>
       <ul>
         <li>This is a basic Next.js starter with Tailwind installed. </li>
