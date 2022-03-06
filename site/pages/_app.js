@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <LayoutMain pageDetails={pageDetails}>
-      <Component {...pageProps} />
+      <Component setPageDetails={setPageDetails} {...pageProps} />
     </LayoutMain>
   )
 }

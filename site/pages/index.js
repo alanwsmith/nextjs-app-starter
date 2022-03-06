@@ -1,19 +1,27 @@
-import HeadTag from '../components/HeadTag'
 import CodeBlock from '../components/CodeBlock'
+import { useEffect } from 'react'
 
-export default function HomePage() {
+export default function HomePage({ setPageDetails }) {
   const exampleCode = `
 const some_var = 'a value'
 const some_object = { key: 'value' }
 `
 
-  // <HeadTag
-  //   description="Next.js Starter from Alan W. Smith"
-  //   image="https://nextjs-starter.alanwsmith.com/og-images/main.png"
-  //   title="Next.js Starter from Alan W. Smith"
-  //   type="website"
-  //   url="https://nextjs-starter.alanwsmith.com/"
-  // />
+  // Set the defaults for pageDetails in _app.js and
+  // then override them here for each page. Note that
+  // `type` should be 'website' for the home page
+
+  useEffect(
+    () =>
+      setPageDetails({
+        description: 'Custom title is here',
+        image: 'https://nextjs-starter.alanwsmith.com/og-images/main.png',
+        title: 'Custom page title here',
+        type: 'article',
+        url: 'https://nextjs-starter.alanwsmith.com/',
+      }),
+    []
+  )
 
   return (
     <>
