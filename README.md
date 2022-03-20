@@ -8,6 +8,10 @@ You have to use a sub directory to load the thing. Use:
 npx create-next-app --example https://github.com/alanwsmith/nextjs-starter.alanwsmith.com/tree/main/site .
 ```
 
+## TODO:
+
+- Update the \_app.js and Layout stuff so the header doesn't try to set a URL for pages  
+   implicitely since that would always just be pointing to the home page.
 
 ## Overview
 
@@ -34,7 +38,7 @@ cd site
 npm i
 ```
 
-That picks up everything from the package.json and package-lock.json files and installs them. 
+That picks up everything from the package.json and package-lock.json files and installs them.
 
 ## Local Dev
 
@@ -44,5 +48,3 @@ the site for local dev.
 ```
 netlify dev
 ```
-
-

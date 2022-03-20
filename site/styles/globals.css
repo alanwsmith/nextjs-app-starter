@@ -50,6 +50,14 @@
     @apply pb-3;
   }
 
+  dt {
+    @apply font-bold;
+  }
+
+  dd {
+    @apply pb-6;
+  }
+
   p {
     @apply pb-6;
   }

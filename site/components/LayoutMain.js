@@ -1,16 +1,8 @@
 import Link from 'next/link'
-import HeadTag from './HeadTag'
 
 export default function LayoutMain(props) {
   return (
     <>
-      <HeadTag
-        description={props.pageDetails.description}
-        image={props.pageDetails.image}
-        title={props.pageDetails.title}
-        type={props.pageDetails.type}
-        url={props.pageDetails.url}
-      />
       <nav className="mt-6 mx-auto max-w-4xl">
         <div className="border-b border-gray-700">
           <Link href="/">

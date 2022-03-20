@@ -1,30 +1,21 @@
 import CodeBlock from '../components/CodeBlock'
-import { useEffect } from 'react'
+import HeadTag from '../components/HeadTag'
 
-export default function HomePage({ setPageDetails }) {
+export default function HomePage() {
   const exampleCode = `
 const some_var = 'a value'
 const some_object = { key: 'value' }
 `
 
-  // Set the defaults for pageDetails in _app.js and
-  // then override them here for each page. Note that
-  // `type` should be 'website' for the home page
-
-  useEffect(
-    () =>
-      setPageDetails({
-        description: 'Custom title is here',
-        image: 'https://nextjs-starter.alanwsmith.com/og-images/main.png',
-        title: 'Custom page title here',
-        type: 'article',
-        url: 'https://nextjs-starter.alanwsmith.com/',
-      }),
-    []
-  )
-
   return (
     <>
+      <HeadTag
+        description="Another page from TheIdOfAlan"
+        image="https://res.cloudinary.com/awsimages/image/upload/w_1200,h_630/c_fit,co_rgb:80bbc8,l_text:Exo%202_66_bold:static-template.alanwsmith.com,w_1080/fl_layer_apply,g_north_west,x_68,y_68/c_fit,co_rgb:80bbc8,l_text:Exo%202_70_bold:alanwsmith.com,w_1000/fl_layer_apply,g_north_west,x_68,y_190/og-images/blank-v4.png"
+        title="Another page from TheIdOfAlan"
+        type="website"
+        url="https://www.alanwsmith.com"
+      />
       <h1>Next.js Starter</h1>
       <ul>
         <li>This is a basic Next.js starter with Tailwind installed. </li>
